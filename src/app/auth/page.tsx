@@ -62,7 +62,7 @@ export default function Page() {
 
               <Link href="/api/auth/signin">
                 <Button type="button" variant="outline" className="w-full">
-                  Login with Github
+                  Login with another account
                 </Button>
               </Link>
             </div>
