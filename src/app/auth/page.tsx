@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -60,9 +59,12 @@ export default function Page() {
               <Button type="submit" className="w-full">
                 Login
               </Button>
-              <Button variant="outline" className="w-full">
-                Login with Google
-              </Button>
+
+              <Link href="/api/auth/signin">
+                <Button type="button" variant="outline" className="w-full">
+                  Login with Github
+                </Button>
+              </Link>
             </div>
             <div className="mt-4 text-center text-sm">
               Don&apos;t have an account?{" "}
